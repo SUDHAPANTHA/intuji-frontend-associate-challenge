@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">🏠</div>
+        <nav class="nav">
+          <ul>
+            <li class="active">Dashboard</li>
+            <li>Schedule</li>
+            <li>Message</li>
+            <li>Analytics</li>
+            <li>Team</li>
+          </ul>
+        </nav>
+        <div class="bottom-nav">
+          <ul>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Help</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <input type="text" placeholder="Search here..." />
+          <div class="profile">
+            <span class="bell">🔔</span>
+            <div class="user">Mirie Kiritani ⬇️</div>
+          </div>
+        </header>
+
+        <section class="overview">
+          <div class="card balance">
+            <p>Your Balance</p>
+            <h2>$28,891.13</h2>
+            <span>📈 +15% compared with last month</span>
+          </div>
+          <div class="card saving">
+            <p>Saving</p>
+            <h2>$1,050.44</h2>
+            <span>📉 -10% compared with last month</span>
+          </div>
+          <div class="card expense">
+            <p>Expenses</p>
+            <h2>$200.31</h2>
+            <span>📉 -2%</span>
+          </div>
+          <div class="card income">
+            <p>Incomes</p>
+            <h2>$21,121.00</h2>
+            <span>📈 +8%</span>
+          </div>
+        </section>
+
+        <section class="analytics">
+          <h3>Analytics</h3>
+          <canvas id="chart"></canvas>
+        </section>
+      </main>
+
+      <aside class="right-panel">
+        <section class="saving-plan">
+          <div class="heading">
+            <h4>Saving Plan</h4>
+            <a href="#">See All</a>
+          </div>
+          <div class="plan">
+            <p>Bali Vacation <span>48%</span></p>
+            <div class="bar bg-purple"></div>
+          </div>
+          <div class="plan">
+            <p>New Gadget <span>79%</span></p>
+            <div class="bar bg-yellow"></div>
+          </div>
+          <div class="plan">
+            <p>Charity <span>32%</span></p>
+            <div class="bar bg-green"></div>
+          </div>
+        </section>
+
+        <section class="recent-transactions">
+          <div class="heading">
+            <h4>Recent Transactions</h4>
+            <a href="#">See All</a>
+          </div>
+          <ul>
+            <li>Figma - $100 - Completed</li>
+            <li>Youtube - $120 - Completed</li>
+            <li>Spotify - $15 - Completed</li>
+            <li>Freepik - $300 - Completed</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
